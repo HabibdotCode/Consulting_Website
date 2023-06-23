@@ -19,7 +19,7 @@ npm install mongoose
 
 npm install express
 
-npm install navigator
+npm install validator
 
 ## Initialize the JSON file 
 
