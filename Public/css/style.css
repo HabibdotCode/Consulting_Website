@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+
+#one{
+    background-color:rgb(142, 203, 117);
+    margin-left: auto;
+    font-size: large;
+    color: whitesmoke;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#logo{
+    display: initial;
+    font-weight: 600;
+    font-size: 38px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    color: #000000;
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+    padding-left: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.hero-text h1 {
+    
+    letter-spacing: 2px;
+    text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.26);
+    color: #2f2f2f;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.service-style {
+    margin-bottom: 10rem;
+}
+
+.our-services {
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 30px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.our-services h4 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #b5db55;
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #49d0da 0%, #47396a 50%);
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #550c57 0%, #28996a 50%);
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fd7f30 0%, #f09603 50%);
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #974eff 0%, #5a57fb 50%);
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #1293c2 0%, #606a64 50%);
+}
+
+.speedup:hover {
+    box-shadow: 0 0 25px 0 rgba(33, 39, 221, 0.2);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #f33474 0%, #f55b2a 50%);
+}
