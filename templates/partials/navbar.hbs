@@ -1,34 +1,76 @@
-<div class="container-fluid navbar-style py-3">
-    <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar - Dummy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        .navbar {
+            background-color: rgba(164, 170, 171, 0.819);
+            border-radius: 20px;
+            margin-top: 30px;
+        }
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/" id="logo">Morris Consulting Services</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto" id="one">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#serviceid">Consulting Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contactid">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-            </li>
+        .navbar ul {
             
-        </ul>
-        
+            margin-right: 40px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            
+            margin-top: 30px;
+            font-size: larger;
+        }
+
+        .navbar li a {
+            padding: 30px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar li a:hover {
+            color: rgb(107, 67, 163)
+        }
+
+        .search {
+            float: right;
+            color: rgb(0, 0, 0);
+            padding: 5px;
+            font-size: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 300px;
+            padding-top: 20px;
+        }
+
+        .search :hover {
+            color: rgb(107, 67, 163);
+        }
+
+        body {
+            background-color: rgba(243, 235, 235, 0.964);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#serviceid">Services</a></li>
+                <li><a href="#contactid">Contact Us</a></li>
+                <li><a href="/careers">Careers</a></li>
+                <div class="search">
+                    <h1 style="margin-bottom: 0px;">Morris Consulting Services<i style="color: rgb(185, 105, 105);" class="fa-solid fa-ghost"></i></h1>
                 </div>
-             </nav>
-         </div>
-     </div>
-</div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
