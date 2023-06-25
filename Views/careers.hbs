@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+    
+        html {
+            box-sizing: border-box;
+        }
+    
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+    
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+    
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            
+        }
+        .card:hover{
+            background-color: #b2edcd;
+        }
+    
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+    
+        .container {
+            padding: 0 16px;
+        }
+    
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    
+        .title {
+            color: grey;
+        }
+    
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+    
+        .button:hover {
+            background-color: #555;
+        }
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+        </style>
+
+
+    <title>Careers</title>
+</head>
+
+<body>
+    <!--<button class="btn btn-success">Click Me </button>-->
+    {{>navbar}}
+    <div class="about-section">
+        <h1 class="about-section">Careers</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+    </div>
+    <br>
+    
+    <h2 style="text-align:center">Let's Grow Together</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/images/job.png" alt="cons" style="width: 40%;" class="center">
+                <div class="container">
+                    <h2>Business Analyst</h2>
+                    <p class="title">Los Angeles, CA</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>jane@example.com</p>
+                    <p><button class="button">Apply</button></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <img src="/images/job.png" alt="Mike" style="width:40%" class="center">
+                <div class="container">
+                    <h2>Associate</h2>
+                    <p class="title">Miami, FL</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>mike@example.com</p>
+                    <p><button class="button">Apply</button></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <img src="/images/job.png" alt="John" style="width:40%" class="center">
+                <div class="container">
+                    <h2>Financial Analyst</h2>
+                    <p class="title">Boston, MA</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>john@example.com</p>
+                    <p><button class="button">Apply</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/images/job.png" alt="Jane" style="width:40%" class="center">
+                <div class="container">
+                    <h2>Senior Associate</h2>
+                    <p class="title">New York, NY</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>jane@example.com</p>
+                    <p><button class="button">Apply</button></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <img src="/images/job.png" alt="Mike" style="width:40%" class="center">
+                <div class="container">
+                    <h2>HR Manager</h2>
+                    <p class="title">Philadelphia, PA</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>mike@example.com</p>
+                    <p><button class="button">Apply</button></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <img src="/images/job.png" alt="John" style="width:40%" class="center">
+                <div class="container">
+                    <h2>Senior Consultant</h2>
+                    <p class="title">Chicago, IL</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>john@example.com</p>
+                    <p><button class="button">Apply</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+
+</html>
