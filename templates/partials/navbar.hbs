@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar - Dummy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <style>
+        .navbar {
+            background-color: rgba(201, 210, 211, 0.819);
+            border-radius: 10px;
+            margin-top: 5px;
+            
+
+        }
+
+        .sticky {
+            position:fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 9;
+        }
+
+        .navbar ul {
+            
+            margin-right: 40px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            
+            margin-top: 30px;
+            font-size: larger;
+        }
+
+        .navbar li a {
+            padding: 30px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar li a:hover {
+            color: rgb(107, 67, 163)
+        }
+
+        .search {
+            float: right;
+            color: rgb(0, 0, 0);
+            padding: 5px;
+            font-size: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 300px;
+            padding-top: 20px;
+        }
+
+        .search :hover {
+            color: rgb(107, 67, 163);
+        }
+
+        body {
+            background-color: rgba(243, 235, 235, 0.964);
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbarr">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#serviceid">Services</a></li>
+                <li><a href="#contactid">Contact Us</a></li>
+                <li><a href="/careers">Careers</a></li>
+                <div class="search">
+                    <h1 style="margin-bottom: 0px;">Morris Consulting Services<i style="color: rgb(185, 105, 105);" class="fa-solid fa-ghost"></i></h1>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        //a javascript snippet for navbar for the sticky position property whenever there is a scroll event 
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbarr");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
