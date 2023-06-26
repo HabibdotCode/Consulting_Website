@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="read.js"></script>
+    
+
+    <style>
+        #more{
+            display: none;
+        }
+
+        #moree{
+            display: none;
+        }
+    </style>
+    
+
+    <title>Morris - Consulting</title>
+</head>
+<script>
+    function myFunction2() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            }
+            else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+
+        }
+
+        function myFunction1() {
+                var dots = document.getElementById("dot");
+                var moreText = document.getElementById("moree");
+                var btnText = document.getElementById("myBtnn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                }
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+
+            }
+</script>
+<body>
+    <!--<button class="btn btn-success">Click Me </button>-->
+    {{>navbar}}
+    <div  class="container-fluid mt-5" style="background-color:rgb(238, 242, 238); margin: bottom 0;margin-top:50px;" id="transbox">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Solidifying Your Business</h1>
+                        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">With Expert Consulting</h1>
+                        <br>                      
+                        <p>We Go the Extra Mile to Ensure your Business Success<span id="dots">... </span><span id="more">. Our consulting covers an incredibly wide range of topics, clients, and industries. Our consultants can work independently or as a part of group, specializing in any given field of expertise.   
+                        <br>
+                        <br>
+                        Essentially, they are hired to share their expertise and knowledge to help businesses reach goals and solve problems. Sometimes, companies bring on
+                        consultants to perform day-to-day work and augment or supplement staff, without the overhead costs associated with a
+                        full-time employee.
+                        <br>
+                        <br>
+                        Other times, they are brought on board for a specialized purpose: to tackle a specific challenge, troubleshoot, spin off
+                        a successful business unit, or revive a failing business.
+                        <br>
+                        <br>
+                        Our work is defined as the practise of providing a third party with expertise on a matter in exchange for a fee. The service can
+                        involve either advisory or implementation services. For the consultant, taking an independent and unbiased stance on an
+                        issue is central to their role.
+                        <br>
+                        <br>
+                        A consultant can, in principle, service any sector. Over the past decades, the term has
+                        become synonymous with business advisory – which focuses mostly on business strategy, management, organisation,
+                        operational processes and technology.</span></p>
+                        <button onclick="myFunction2()" class="btn-style btn-primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(108, 216, 41);padding:4px 5px;" id="myBtn">Read More</button>
+
+                    </div>
+                    <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+                        <figure>
+                            <img src="images/logo-svg.svg" alt="image">
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-5 about-style" id="aboutid" style="background-color: rgb(238, 242, 238);">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <h1 class="text-center main-heading" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">About Us</h1>
+                <p class="text-center sub-heading">Professional services for your Business</p>
+                <div class="row">
+                    <div class="col-md-6 col-12 hero-text">
+                        <figure>
+                            <img src="images/2663543.JPG" alt="image" width="550px">
+                        </figure>
+                    </div>
+                    <br>
+
+                    <div class="col-md-6 col-12 hero-text d-flex justify-content-center align-items-start flex-column">
+                        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-left:10px">A Team of Individuals</h1>
+                        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-left:10px">With Professional Excellency</h1>
+                        <br>
+                        <p class="bold-style" style="margin-left:10px;">Morris Consulting is a business comprised of industry-specific experts who offer professional advice, guidance and
+                        actionable solutions to businesses experiencing issues they can’t deal with in-house. Every company is bound to have problems; Morris consulting is contracted to solve them. <span id="dot"></span><span id="moree">
+                        <br>
+                        <br>
+                        Using the knowledge and experience of our advisers, we help companies on every stage of their development in the
+                        construction and reorganization of all areas of their activity.
+                        
+                        We make sure that the business solutions developed are in line with the market best practices.
+                        <br>
+                        <br>
+                        We take into account the
+                        individual nature of each client's operations. We are convinced that our support will contribute to achieving high
+                        business results while reducing costs and risks of their business. One way we bring our purpose to life is by integrating social and environmental considerations into our client work
+                        <br>
+                        <br>
+                        Our management consulting focus on our clients' most critical issues and opportunities: strategy, marketing,
+                        organization, operations, technology, transformation, digital, advanced analytics, corporate finance, mergers &
+                        acquisitions and sustainability across all industries and geographies.
+                        <br>
+                        <br>
+                        We bring deep, functional expertise, but are
+                        known for our holistic perspective: we capture value across boundaries and between the silos of any organization. We
+                        have proven a multiplier effect from optimizing the sum of the parts, not just the individual pieces.
+                        </span></p>
+                        <button onclick="myFunction1()" class="btn-style btn-primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left:10px;color:rgb(108, 216, 41);padding:4px 5px;" id="myBtnn">Read More</button>
+                    
+                    </div>
+
+    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+    <div class="container-fluid mt-5 about-style" id="serviceid" style="background-color: rgb(236, 241, 236);">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <h1 class="text-center main-heading" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Consulting Services</h1>
+                <p class="text-center sub-heading">Grow your Business Exponentially</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="our-services settings">
+                            <div class="icon">
+                                <img src="images/consulting.png" alt="agile" width="120px">
+                            </div>
+                                <h3>Agile Methodology</h3>
+                                <p>Become faster, more flexible and intensely customer-focused</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="our-services privacy">
+                            <div class="icon">
+                                <img src="images/consulting.png" alt="agile" width="120px">
+                            </div>
+                            <h3>Mergers & Acquisitions</h3>
+                            <p>Consolidation of companies or assets through financial transactions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="our-services backups">
+                            <div class="icon">
+                                <img src="images/consulting.png" alt="agile" width="120px">
+                            </div>
+                            <h3>Private Equity</h3>
+                            <p>Acquire control of public companies with plans to take them private</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="our-services ssl">
+                            <div class="icon">
+                                <img src="images/consulting.png" alt="agile" width="120px">
+                            </div>
+                            <h3>Procurement</h3>
+                            <p>Bidding is a part of large procurement processes involving multiple bidders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="our-services database">
+                            <div class="icon">
+                                <img src="images/consulting.png" alt="agile" width="120px">
+                            </div>
+                            <h3>Transformation</h3>
+                            <p>Boost overall performance through increased revenue & lower operating costs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="our-services speedup">
+                            <div class="icon">
+                                <img src="images/consulting.png" alt="agile" width="120px">
+                            </div>
+                            <h3>Strategy</h3>
+                            <p>Formulation & implementation of goals & initiatives by company's stakeholders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>           
+{{>maps}}
+
+{{>contact}}
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
