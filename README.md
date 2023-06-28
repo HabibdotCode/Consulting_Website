@@ -1,7 +1,7 @@
 # MyNodeJS
 
 
-## Website_NodeJS
+# Consulting Website
 
 The name for the project.
 
